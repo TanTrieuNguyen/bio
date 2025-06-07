@@ -48,7 +48,10 @@
 		elements.ping.style.boxShadow = glow;
 		elements.statusText.textContent = text;
 		document.querySelector("#name").textContent =
-			status.discord_user.display_name;
+        status.discord_user.display_name = "Nguyễn Tấn Triệu";
+        document.getElementById("username").innerText = status.discord_user.display_name;
+
+
 	}
 	function startWebSocket() {
 		const ws = new WebSocket("wss://api.lanyard.rest/socket");
